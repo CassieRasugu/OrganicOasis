@@ -12,7 +12,7 @@
   Meat.create(
     name: Faker::Food.dish,
     price: Faker::Commerce.price(range: 1..100.0),
-    image_url: Faker::Placeholdit.image,
+    image: Faker::LoremFlickr.image(size: "200x200"),
     description: Faker::Food.description
   )
 end
@@ -22,7 +22,7 @@ end
   Beverage.create(
     name: Faker::Drink.unique.beverage,
     price: Faker::Commerce.price(range: 1..100.0),
-    image_url: Faker::Placeholdit.image,
+    image: Faker::LoremFlickr.image(size: "200x200"),
     description: Faker::Food.description
   )
 end
@@ -32,7 +32,7 @@ end
   Bakery.create(
     name: Faker::Food.dish,
     price: Faker::Commerce.price(range: 1..100.0),
-    image_url: Faker::Placeholdit.image,
+    image: Faker::LoremFlickr.image(size: "200x200"),
     description: Faker::Food.description
   )
 end
@@ -42,7 +42,7 @@ end
   Spices.create(
     name: Faker::Food.spice,
     price: Faker::Commerce.price(range: 1..100.0),
-    image_url: Faker::Placeholdit.image,
+    image: Faker::LoremFlickr.image(size: "200x200"),
     description: Faker::Food.description
   )
 end
@@ -52,7 +52,7 @@ end
   Cereal.create(
     name: Faker::Food.dish,
     price: Faker::Commerce.price(range: 1..100.0),
-    image_url: Faker::Placeholdit.image,
+    image: Faker::LoremFlickr.image(size: "200x200"),
     description: Faker::Food.description
   )
 end
@@ -62,7 +62,7 @@ end
   Dairy.create(
     name: Faker::Food.dish,
     price: Faker::Commerce.price(range: 1..100.0),
-    image_url: Faker::Placeholdit.image,
+    image: Faker::LoremFlickr.image(size: "200x200"),
     description: Faker::Food.description
   )
 end
@@ -72,7 +72,7 @@ end
   Offers.create(
     name: Faker::Commerce.product_name,
     price: Faker::Commerce.price(range: 1..100.0),
-    image_url: Faker::Placeholdit.image,
+    image: Faker::LoremFlickr.image(size: "200x200"),
     description: Faker::Commerce.promotion
   )
 end
@@ -82,7 +82,7 @@ end
   VeggiesAndFruits.create(
     name: Faker::Food.fruits,
     price: Faker::Commerce.price(range: 1..100.0),
-    image_url: Faker::Placeholdit.image,
+    image: Faker::LoremFlickr.image(size: "200x200"),
     description: Faker::Food.description
   )
 end
